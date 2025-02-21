@@ -2,6 +2,19 @@
 #define CLAVES_H
 
 
+#define MAX_VECTOR_SIZE 32  // Tamaño máximo del array de doubles
+#define MAX_CHAR_SIZE 256   // Tamaño máximo de la cadena de caracteres
+
+
+typedef struct Tupla {
+    int key;
+    char value1[MAX_CHAR_SIZE];
+    double value2[MAX_VECTOR_SIZE];
+    int N_value2; 
+    struct Coord value3;
+    struct Tupla *next;
+} Tupla;
+
 struct Coord {
    int x ;
    int y ;
