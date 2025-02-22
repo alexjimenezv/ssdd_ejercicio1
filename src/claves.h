@@ -5,6 +5,10 @@
 #define MAX_VECTOR_SIZE 32  // Tamaño máximo del array de doubles
 #define MAX_CHAR_SIZE 256   // Tamaño máximo de la cadena de caracteres
 
+struct Coord {
+    int x ;
+    int y ;
+ } ;
 
 typedef struct Tupla {
     int key;
@@ -15,11 +19,8 @@ typedef struct Tupla {
     struct Tupla *next;
 } Tupla;
 
-struct Coord {
-   int x ;
-   int y ;
-} ;
 
+int init(Tupla **l);
 
 /**
  * @brief Esta llamada permite inicializar el servicio de elementos clave-valor1-valor2-valor3.
